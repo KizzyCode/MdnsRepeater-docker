@@ -16,5 +16,5 @@ This repo is licensed under either the [BSD-2-clause license](https://opensource
 [MIT license](https://opensource.org/licenses/MIT).
 
 **Please note that both licenses affect this repository, the
-[mdns-repeater subrepository](https://github.com/kennylevinsen/mdns-repeater) (`/mdns-repeater-src`) uses a
+[mdns-repeater subrepository](https://github.com/kennylevinsen/mdns-repeater) (`/mdns-repeater`) uses a
 different license.**
