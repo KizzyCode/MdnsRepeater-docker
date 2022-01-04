@@ -1,3 +1,3 @@
 [submodule "mdns-repeater"]
-	path = mdns-repeater-src
+	path = mdns-repeater
 	url = https://github.com/KizzyCode/mdns-repeater
