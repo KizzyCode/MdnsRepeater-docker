@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  mdns-repeader:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    
+    # We need privileged access to the host network
+    network_mode: "host"
+    privileged: true
+    
+    # Define the network interfaces to bridge
+    environment:
+      EXTERNAL_INTERFACE: my-ethernet-interface
+      DOCKER_INTERFACE: my-docker-network
