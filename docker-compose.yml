@@ -11,5 +11,5 @@ services:
     
     # Define the network interfaces to bridge
     environment:
-      EXTERNAL_INTERFACE: my-ethernet-interface
-      DOCKER_INTERFACE: my-docker-network
+      INTERFACE_EXTERN: my-ethernet-interface
+      INTERFACE_SUBNET: my-subnet-network
