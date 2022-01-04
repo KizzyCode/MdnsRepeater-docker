@@ -8,11 +8,9 @@ RUN gcc -O3 -Wall -Werror -DHGVERSION="\"1\"" /buildroot/mdns-repeater.c -o /bui
 
 
 # Build the real container
-ARG INTERFACE_EXTERN
-ARG INTERFACE_SUBNET
-
 FROM alpine:latest
-COPY --from=buildenv /buildroot/mdns-repeater /usr/local/bin/mdns-repeater
+COPY --from=buildenv /buildroot/mdns-repeater /libexec/mdns-repeater
+COPY ./mdns-repeater.sh /sbin/mdns-repeater
 
 USER root
-CMD ["/usr/local/bin/mdns-repeater", "-f", "${INTERFACE_EXTERN}", "${INTERFACE_SUBNET}"]
+CMD ["/sbin/mdns-repeater"]
